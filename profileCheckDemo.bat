@@ -52,13 +52,3 @@ set schemaAccess="demoAccessLossy.sch"
 
 :: Step 2: verify that properties match profile by validating jpylyzer output against schema
 %java% -jar %probatron% balloon_eciRGB_jp2.xml %schemaAccess% > balloon_eciRGB_jp2_assessment.xml
-
-:: ----------------------------
-:: Demo of error messages
-:: ----------------------------
-
-:: Validate jpylyzer output of *access* image against *master* specifications 
-::%java% -jar %probatron% dpo_colour_00990_access_jp2.xml %schemaMaster% > resultAccessValidatedAgainstMasterProfile.xml
-
-:: Validate jpylyzer output of *master* image against 8access* specifications 
-::%java% -jar %probatron% dpo_colour_00990_master_jp2.xml %schemaAccess% > resultMasterValidatedAgainstAccessProfile.xml
