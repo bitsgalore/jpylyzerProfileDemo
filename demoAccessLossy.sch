@@ -31,7 +31,7 @@
     <!-- check if compression ratio doesn't exceed threshold value (a bit tricky as for images that 
          don't contain much information very high compression ratios may be obtained without losing quality)  
           -->
-    <s:assert test="compressionRatio &lt; 35">To much compression</s:assert>
+    <s:assert test="compressionRatio &lt; 35">Too much compression</s:assert>
     </s:rule>
 
     <!-- check if resolution box exists -->
